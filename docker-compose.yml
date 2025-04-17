@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fake-external-service
+    restart: always
+    ports:
+      - '8080:8080'
+
+
